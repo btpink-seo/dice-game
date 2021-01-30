@@ -39,7 +39,6 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd app/dice-game
-            git checkout main
             git fetch --all
             git reset --hard origin/main
             docker image prune -a -f
