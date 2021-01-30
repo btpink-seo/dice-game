@@ -12,10 +12,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: SET HOST
-        run: sed -i 's/HOST/dice-map.com/g' ./client/src/environments/environment.prod.ts
-#         run: sed -i 's/HOST/'"$HOST"'/g' ./client/src/environments/environment.prod.ts
+        run: sed -i 's/HOST/'"$DOMAIN"'/g' ./client/src/environments/environment.prod.ts
         env:
-          HOST: ${{ secrets.HOST }}
+          DOMAIN: ${{ secrets.DOMAIN }}
 
       - name: Run build
         run: |
