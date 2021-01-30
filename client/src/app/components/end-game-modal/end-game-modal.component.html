@@ -18,10 +18,10 @@
     <table class="table table-striped text-center">
       <thead class="thead-dark">
       <tr>
-        <th scope="col">{{i18n.get('rank')}}</th>
-        <th scope="col">{{i18n.get('player')}}</th>
-        <th scope="col" *ngIf="!room.mode.scramble">{{i18n.get('kill')}}</th>
-        <th scope="col">{{i18n.get(room.mode.scramble ? 'candy' : 'life')}}</th>
+        <th class="th-size" scope="col">{{i18n.get('rank')}}</th>
+        <th class="th-size" scope="col">{{i18n.get('player')}}</th>
+        <th class="th-size" scope="col" *ngIf="!room.mode.scramble">{{i18n.get('kill')}}</th>
+        <th class="th-size" scope="col">{{i18n.get(room.mode.scramble ? 'candy' : 'life')}}</th>
       </tr>
       </thead>
       <tbody>

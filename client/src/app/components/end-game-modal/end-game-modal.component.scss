@@ -29,3 +29,9 @@ tr {
   width: 1.5rem;
   height: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .th-size {
+    font-size: 0.9rem;
+  }
+}

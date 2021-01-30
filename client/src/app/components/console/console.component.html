@@ -1,6 +1,6 @@
 <div class="bg-dark console-ui p-1">
-  <div class="overflow-auto min-width-status">
-    <div class="d-flex flex-column" *ngFor="let p of room.players">
+  <div class="overflow">
+    <div *ngFor="let p of room.players">
       <app-player-status
         [icon]="p.piece"
         [life]="p.life"
